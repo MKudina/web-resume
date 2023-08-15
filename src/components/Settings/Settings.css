@@ -1,0 +1,108 @@
+.settings__container {
+    display: none;
+}
+
+.settings__container_open{
+    display: flex;
+    width: 200px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    border-radius: 8px;
+    justify-content: center;
+    position: absolute;
+    top: 175px;
+    right: 20px;
+    transition: 1.5s;
+    box-sizing: border-box;
+    box-shadow: 10px 15px 20px gray;
+    border: 3px solid grey;
+    color: white;
+}
+
+.settings__list {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.settings__item {
+    margin: 0;
+    padding: 0;
+}
+
+.settings__list-title {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.settings__button {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    border-radius: 50%;
+    color: white;
+}
+
+.settings__en-mode {
+    transition: 1s;
+    margin: 0 0 0 15px;
+}
+
+.settings__en-mode:hover {
+    background-color: white;
+    color: black;
+}
+
+.settings__ru-mode {
+    transition: 1s;
+}
+
+.settings__ru-mode:hover {
+    background-color: white;
+    color: black;
+}
+
+.settings__decoration-mode_dark {
+    transition: 1s;
+    background-image: url(../../images/dark-mode.svg);
+}
+
+.settings__decoration-mode_dark:hover {
+    transform: rotateZ(360deg);
+    background-image: url(../../images/dark-mode-hover.svg);
+    background-color: white;
+}
+
+.settings__decoration-mode_light {
+    transition: 1s;
+    background-image: url(../../images/light-mode.svg);
+}
+
+.settings__decoration-mode_light:hover {
+    transform: rotateZ(360deg);
+    background-image: url(../../images/svg-editor-image\ \(1\).svg);
+    background-color: black;
+}

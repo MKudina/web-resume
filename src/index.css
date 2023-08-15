@@ -1,0 +1,43 @@
+/* подключение сброса Normalize */
+
+@import url(./vendor/normalize.css);
+
+/* подключение шрифта Inter */
+
+@import url(./vendor/fonts/fonts.css);
+
+/* подключение блока Header */
+
+@import url(./components/Header/Header.css);
+
+/* подключение блока Main */
+
+@import url(./components/Main/Main.css);
+
+/* подключение блока Card */
+
+@import url(./components/Card/Card.css);
+
+/* подключение блока Projects */
+
+@import url(./pages/Projects/Projects.css);
+
+/* подключение блока About */
+
+@import url(./pages/About/About.css);
+
+/* подключение блока Skills */
+
+@import url(./pages/Skills/Skills.css);
+
+/* подключение блока Contacts */
+
+@import url(./pages/Contacts/Contacts.css);
+
+/* подключение блока Footer */
+
+@import url(./components/Footer/Footer.css);
+
+/* подключение блока Settings */
+
+@import url(./components/Settings/Settings.css);

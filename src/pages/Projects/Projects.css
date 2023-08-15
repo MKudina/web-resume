@@ -1,0 +1,132 @@
+.projects {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.projects__title {
+    margin: 0;
+    padding: 60px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.projects__list-cards {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 243px);
+    gap: 30px;
+}
+
+/* .projects__card {
+    width: 100%;
+    height: 305px;
+    border: 2px solid black;
+    border-radius: 3%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.projects__card-image {
+    width: 100%;
+    height: 244px;
+    background-image: url(../../images/7w5u42jUdgg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    box-sizing: border-box;
+}
+
+.projects__card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.projects__card-name {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.003em;
+}
+
+.projects__card-about {
+    width: 30%;
+    width: 120px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    border: none;
+    background-color: #f6f6fae2;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.003em;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.projects__card-about:hover {
+    background-color: black;
+    color: white;
+} */
+
+@media screen and (max-width: 1439px) {
+
+    .projects__list-cards {
+        grid-template-columns: repeat(5, 225px);
+        gap: 20px;
+    }
+
+    .projects__card-name {
+        font-size: 20px;
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+
+    .projects__list-cards {
+        grid-template-columns: repeat(3, 270px);
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1130px) {
+
+    .projects {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .projects__list-cards {
+        grid-template-columns: repeat(2, 270px);
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .projects__list-cards {
+        grid-template-columns: repeat(1, 270px);
+        gap: 30px;
+    }
+
+}

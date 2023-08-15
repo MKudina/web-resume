@@ -1,0 +1,166 @@
+.contacts {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__title {
+    margin: 0;
+    padding: 60px 0;
+}
+
+.contact__container{
+    max-width: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__text-me-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contacts__text-me-title {
+    margin: 0 0 15px 0 ;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.contacts__text-me-list-item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(28, 8, 206);
+}
+
+.contacts__text-me-link:visited {
+    color: rgb(28, 8, 206);
+}
+
+.contact__icon {
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.contact__icon_email {
+    background-image: url(../../images/email-icon.svg);
+}
+
+.contact__icon_telegram {
+    background-image: url(../../images/telegram-icon.svg);
+}
+
+.contact__icon_phone {
+    background-image: url(../../images/phone-icon.svg);
+}
+
+.contacts__media-container {
+    max-width: 300px;
+    margin: 0 0 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__media-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.contacts__media-list-item {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 38px 38px;
+    transition: .5s;
+}
+
+.contacts__media-list-item:hover {
+    background-size: 48px 48px;
+}
+
+.contacts__media-title {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.contacts__link_git {
+    background-image: url(../../images/git-icon.svg);
+}
+
+.contacts__link_vk {
+    background-image: url(../../images/VK-icon.svg);
+}
+
+@media screen and (max-width: 1130px) {
+
+    .contacts {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .contacts__text-me-title {
+        font-size: 24px;
+    }
+
+    .contacts__text-me-list-item {
+        font-size: 22px;
+    }
+
+    .contacts__media-container {
+        margin: 0;
+    }
+
+    .contacts__media-title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .contacts__text-me-title {
+        font-size: 18px;
+    }
+
+    .contacts__text-me-list-item {
+        font-size: 16px;
+    }
+
+    .contacts__media-container {
+        max-width: 70px;
+    }
+
+    .contacts__media-title {
+        font-size: 18px;
+    }
+}

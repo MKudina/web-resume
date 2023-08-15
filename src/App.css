@@ -1,0 +1,40 @@
+.page {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    background-color: #f6f6fae2;
+    position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+    .page {
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page {
+        max-width: 480px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .page {
+        max-width: 320px;
+    }
+}

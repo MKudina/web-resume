@@ -1,0 +1,65 @@
+.skills {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.skills__title {
+    margin: 0;
+    padding: 60px 0;
+}
+
+.skills__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.skills__list-item {
+    width: 88px;
+    height: 88px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.skills__html {
+    background-image: url(../../images/Skill=HTML5.svg);
+}
+
+.skills__css {
+    background-image: url(../../images/Skill=CSS3.svg);
+}
+
+.skills__js {
+    background-image: url(../../images/Skill=Javascript.svg);
+}
+
+.skills__react {
+    background-image: url(../../images/Skill=React.svg);
+}
+
+.skills__git {
+    background-image: url(../../images/Skill=Git.svg);
+}
+
+@media screen and (max-width: 1130px) {
+
+    .skills {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .skills__list-item {
+        width: 75px;
+        height: 75px;
+    }
+
+}
