@@ -9,7 +9,7 @@ function Card({onLanguage, project}) {
                     О проекте:<br/>
                     {project.description}
                 </p>
-                <a href={project.url} className="card__link">Посмотреть Git</a>
+                <a href={project.url} className="card__link" target="__blank">Посмотреть Git</a>
         </li>
     )
 }

@@ -5,12 +5,14 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Settings from './components/Settings/Settings';
 import { api } from './utils/Api';
+import useTheme from './hooks/use-theme';
 
 function App() {
 
   const [isOpenSettings, setOpenSettings] = useState(false);
   const [isLanguage, setIsLanguage] = useState('ru');
   const [projects, setProjects] = useState([]);
+  const {theme, setTheme} = useTheme();
 
   function openSettings(){
     if (!isOpenSettings){
@@ -37,7 +39,8 @@ function App() {
       <Header openSettings={openSettings} onLanguage={isLanguage} />
       <Main onLanguage={isLanguage} projects={projects} />
       <Footer onLanguage={isLanguage} />
-      <Settings isOpenSettings={isOpenSettings} handleLanguage={setIsLanguage} onLanguage={isLanguage} />
+      <Settings isOpenSettings={isOpenSettings} handleLanguage={setIsLanguage} onLanguage={isLanguage} 
+      handleTheme={setTheme} onTheme={theme} />
     </div>
   );
 }

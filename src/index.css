@@ -6,6 +6,10 @@
 
 @import url(./vendor/fonts/fonts.css);
 
+/* подключение тем */
+
+@import url(./vendor/themes.css);
+
 /* подключение блока Header */
 
 @import url(./components/Header/Header.css);

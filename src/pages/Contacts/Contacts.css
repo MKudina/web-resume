@@ -46,6 +46,10 @@
     color: rgb(28, 8, 206);
 }
 
+.contacts__text-me-link {
+    text-decoration: none;
+}
+
 .contacts__text-me-link:visited {
     color: rgb(28, 8, 206);
 }

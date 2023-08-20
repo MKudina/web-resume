@@ -1,12 +1,19 @@
 import { useState } from 'react';
 
-function Settings({isOpenSettings, handleLanguage, onLanguage}){
+function Settings({isOpenSettings, handleLanguage, onLanguage, handleTheme, onTheme}){
 
     const [isModeDecoration, setIsModeDecoration] = useState('light');
 
-    function handeleDecoration(){
+    function handeleTheme(){
+        if (onTheme === 'light') {
+            handleTheme('dark');
+        } else {
+            handleTheme('light');
+        }
+
         if (isModeDecoration === 'light'){
           setIsModeDecoration('dark');
+
         } else {
           setIsModeDecoration('light');
         }
@@ -18,7 +25,6 @@ function Settings({isOpenSettings, handleLanguage, onLanguage}){
     function changeLanguageRu(){
         handleLanguage('ru')
     }
-
 
     return (
         <div className={`settings__container${isOpenSettings ? '_open' : ''}`}>
@@ -37,7 +43,7 @@ function Settings({isOpenSettings, handleLanguage, onLanguage}){
                         {onLanguage === 'en' && 'Mode:'}
                     </h2>
                     <button className={`settings__button settings__decoration-mode${isModeDecoration === 'light' ? '_dark' : '_light'}`} 
-                    type="button" onClick={handeleDecoration} />
+                    type="button" onClick={handeleTheme} />
                 </li>
             </ul>
         </div>

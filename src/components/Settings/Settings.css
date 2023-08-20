@@ -8,7 +8,7 @@
     height: 250px;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: var(--background-second-color);
     border-radius: 8px;
     justify-content: center;
     position: absolute;
@@ -16,9 +16,10 @@
     right: 20px;
     transition: 1.5s;
     box-sizing: border-box;
-    box-shadow: 10px 15px 20px gray;
-    border: 3px solid grey;
-    color: white;
+    box-shadow: 10px 15px 20px var(--header-shadow);
+    border: 3px solid var(--border-setting-color);
+    transition: border 1s linear;
+    color: var(--text-second-color);
 }
 
 .settings__list {
@@ -98,11 +99,11 @@
 
 .settings__decoration-mode_light {
     transition: 1s;
-    background-image: url(../../images/light-mode.svg);
+    background-image: url(../../images/svg-editor-image\ \(1\).svg);
 }
 
 .settings__decoration-mode_light:hover {
     transform: rotateZ(360deg);
-    background-image: url(../../images/svg-editor-image\ \(1\).svg);
-    background-color: black;
+    background-image: url(../../images/light-mode.svg);
+    background-color: white;
 }

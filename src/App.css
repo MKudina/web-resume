@@ -4,8 +4,10 @@
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
-    color: black;
-    background-color: #f6f6fae2;
+    color: var(--text-first-color);
+    background-color: var(--background-first-color);
+    transition: background-color 500ms linear,
+    color 700ms linear;
     position: relative;
 }
 
