@@ -7,6 +7,10 @@
 .contacts__title {
     margin: 0;
     padding: 60px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
 }
 
 .contact__container{
@@ -31,8 +35,8 @@
     padding: 0;
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 30px;
 }
 
 .contacts__text-me-list-item {
@@ -82,6 +86,7 @@
 }
 
 .contacts__media-list {
+    width: 164px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -110,8 +115,8 @@
     padding: 0;
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 30px;
 }
 
 .contacts__link_git {

@@ -73,8 +73,7 @@
 }
 
 .settings__en-mode:hover {
-    background-color: white;
-    color: black;
+    filter: invert(1);
 }
 
 .settings__ru-mode {
@@ -82,8 +81,7 @@
 }
 
 .settings__ru-mode:hover {
-    background-color: white;
-    color: black;
+    filter: invert(1);
 }
 
 .settings__decoration-mode_dark {
@@ -93,17 +91,15 @@
 
 .settings__decoration-mode_dark:hover {
     transform: rotateZ(360deg);
-    background-image: url(../../images/dark-mode-hover.svg);
-    background-color: white;
+    filter: invert(1);
 }
 
 .settings__decoration-mode_light {
     transition: 1s;
-    background-image: url(../../images/svg-editor-image\ \(1\).svg);
+    background-image: url(../../images/light-mode.svg);
 }
 
 .settings__decoration-mode_light:hover {
     transform: rotateZ(360deg);
-    background-image: url(../../images/light-mode.svg);
-    background-color: white;
+    filter: invert(1);
 }

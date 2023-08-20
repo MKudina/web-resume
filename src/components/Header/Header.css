@@ -67,13 +67,13 @@
     padding: 5px;
     text-decoration: none;
     color: var(--text-second-color);
+    background-color: black;
     border-radius: 15px;
     transition: 1.5s;
 }
 
 .header__link:hover {
-    color: black;
-    background-color: white;
+    filter: invert(1);
 }
 
 .header__settings {
