@@ -157,6 +157,11 @@
 
 @media screen and (max-width: 420px) {
 
+    .contact__container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .contacts__text-me-title {
         font-size: 18px;
     }
@@ -172,4 +177,6 @@
     .contacts__media-title {
         font-size: 18px;
     }
+
+    
 }
