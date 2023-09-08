@@ -37,7 +37,7 @@ function Header ({openSettings, onLanguage}){
                             </a>
                         </li>
                         <li className="header__list-item_menu">
-                            <button type="button" className="header__menu" />
+                            <button type="button" className="header__menu" onClick={openSettings} />
                         </li>
                     </ul>
                 </nav>
