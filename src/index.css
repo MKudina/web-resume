@@ -1,3 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-link {
+      @apply p-[5px] text-gray-100 bg-black rounded-2xl duration-[1000ms] hover:invert;
+    }
+    .theme-light {
+        @apply 
+    }
+  }
+
 /* подключение сброса Normalize */
 
 @import url(./vendor/normalize.css);
@@ -12,7 +25,7 @@
 
 /* подключение блока Header */
 
-@import url(./components/Header/Header.css);
+/* @import url(./components/Header/Header.css); */
 
 /* подключение блока Main */
 
