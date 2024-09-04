@@ -6,7 +6,7 @@ function Footer({onLanguage}) {
             <p className="footer__copyright">
                 {onLanguage === 'ru' && 'Кудина Максим, '}
                 {onLanguage === 'en' && 'Kudina Maksim, '}
-                {curretYear == 2023 ? curretYear : `2023-${curretYear}`}</p>
+                {curretYear === 2023 ? curretYear : `2023-${curretYear}`}</p>
         </footer>
     )
 }

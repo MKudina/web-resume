@@ -1,5 +1,14 @@
+html, body, #root {
+    height: 100%;
+    background-color: var(--background-first-color);
+    margin: 0;
+    transition: background-color 500ms linear,
+    color 700ms linear;
+  }
+
 .page {
     max-width: 1920px;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;

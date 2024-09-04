@@ -25,7 +25,7 @@
 
 /* подключение блока Header */
 
-/* @import url(./components/Header/Header.css); */
+@import url(./components/Header/Header.css);
 
 /* подключение блока Main */
 
