@@ -5,7 +5,6 @@ html[data-theme = 'light'] {
     --text-second-color: #f6f6fae2;
     --background-first-color:white; /* #1d1d32e */
     --background-second-color:black;
-    --header-shadow: gray;
     --border-avatar-color: white;
     --border-card-color: black;
     --border-setting-color: gray;
@@ -18,7 +17,6 @@ html[data-theme='dark'] {
     --text-second-color: #f6f6fae2;
     --background-first-color: #202022;
     --background-second-color: black;
-    --header-shadow: gray;
     --border-avatar-color: white;
     --border-card-color: white;
     --border-setting-color: white;

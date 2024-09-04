@@ -16,7 +16,6 @@
     right: 20px;
     transition: 1.5s;
     box-sizing: border-box;
-    box-shadow: 10px 15px 20px var(--header-shadow);
     border: 3px solid var(--border-setting-color);
     transition: border 1s linear;
     color: var(--text-second-color);
