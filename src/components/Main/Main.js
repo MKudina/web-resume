@@ -6,7 +6,7 @@ import Contacts from "../../pages/Contacts/Contacts";
 function Main ({onLanguage, projects}){
 
     return (
-        <main className="content">
+        <main className="max-w-full mx-auto">
             <Projects onLanguage={onLanguage} projects={projects} />
             <About onLanguage={onLanguage} />
             <Skills onLanguage={onLanguage} />

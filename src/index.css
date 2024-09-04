@@ -23,14 +23,6 @@
 
 @import url(./vendor/themes.css);
 
-/* подключение блока Header */
-
-/* @import url(./components/Header/Header.css); */
-
-/* подключение блока Main */
-
-@import url(./components/Main/Main.css);
-
 /* подключение блока Card */
 
 @import url(./components/Card/Card.css);
@@ -50,10 +42,6 @@
 /* подключение блока Contacts */
 
 @import url(./pages/Contacts/Contacts.css);
-
-/* подключение блока Footer */
-
-@import url(./components/Footer/Footer.css);
 
 /* подключение блока Settings */
 

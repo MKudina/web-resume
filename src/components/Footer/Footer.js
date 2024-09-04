@@ -1,12 +1,12 @@
 function Footer({onLanguage}) {
-    let curretYear = new Date().getFullYear()
+    const curretYear = new Date().getFullYear()
 
     return (
-        <footer className="footer">
-            <p className="footer__copyright">
+        <footer className="pt-14 text-center">
+            <p className="py-9 text-base font-semibold not-italic tracking-wider">
                 {onLanguage === 'ru' && 'Кудина Максим, '}
                 {onLanguage === 'en' && 'Kudina Maksim, '}
-                {curretYear == 2023 ? curretYear : `2023-${curretYear}`}</p>
+                {curretYear === 2023 ? curretYear : `2023-${curretYear}`}</p>
         </footer>
     )
 }
