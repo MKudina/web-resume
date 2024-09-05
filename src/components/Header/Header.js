@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header ({openSettings, onLanguage}){
 
     return(
@@ -13,32 +15,31 @@ function Header ({openSettings, onLanguage}){
                             {onLanguage === 'en' && 'Kudina Maksim'}
                         </p>
                 </div>
-                <nav className="w-10 lg:w-2/5">
-                    <ul className="w-full flex flex-row justify-end lg:justify-between 
-                    xl:text-2xl md:text-xl font-medium not-italic list-none">
-                        <li className="hidden lg:block">
-                            <a href="#project" className="btn-link">
-                                {onLanguage === 'ru' && 'Проекты'}
-                                {onLanguage === 'en' && 'Projects'}
-                            </a>
-                        </li>
-                        <li className="hidden lg:block">
-                            <a href="#about" className="btn-link">
+                <nav className="header__navigation">
+                    <ul className="header__list">
+                        <li className="header__list-item">
+                            <Link to="/" className="header__link">
                                 {onLanguage === 'ru' && 'Обо мне'}
                                 {onLanguage === 'en' && 'About me'}
-                            </a>
+                            </Link>
                         </li>
-                        <li className="hidden lg:block">
-                            <a href="#skills" className="btn-link">
+                        <li className="header__list-item">
+                            <Link to="/project" className="header__link">
+                                {onLanguage === 'ru' && 'Проекты'}
+                                {onLanguage === 'en' && 'Projects'}
+                            </Link>
+                        </li>
+                        <li className="header__list-item">
+                            <Link to="/skills" className="header__link">
                                 {onLanguage === 'ru' && 'Скиллы'}
                                 {onLanguage === 'en' && 'Skills'}
-                            </a>
+                            </Link>
                         </li>
-                        <li className="hidden lg:block">
-                            <a href="#contacts" className="btn-link">
+                        <li className="header__list-item">
+                            <Link to="/contacts" className="header__link">
                                 {onLanguage === 'ru' && 'Контакты'}
                                 {onLanguage === 'en' && 'Contacts'}
-                            </a>
+                            </Link>
                         </li>
                         <li className="">
                             <button type="button" className="w-9 h-9 lg:w-11 lg:h-11 
