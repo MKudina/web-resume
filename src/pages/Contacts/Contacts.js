@@ -1,45 +1,45 @@
 function Contacts({onLanguage}) {
     return (
-        <section id="contacts" className="contacts">
-            <h2 className="contacts__title">
+        <section id="contacts" className="max-w-[90%] lg:max-w-full mx-auto">
+            <h2 className="w-full py-[60px] font-medium text-3xl">
                 {onLanguage === 'ru' && 'Контакты'}
                 {onLanguage === 'en' && 'Contacts'}
             </h2>
-            <div className="contact__container">
-                <div className="contacts__text-me-container">
-                    <h2 className="contacts__text-me-title">
-                        {onLanguage === 'ru' && 'Написать мне'}
-                        {onLanguage === 'en' && 'Text me'}
+            <div className="max-w-[500px] flex flex-col md:flex-row justify-between gap-8 md:gap-0">
+                <div>
+                    <h2 className="mb-4 font-medium text-xl sm:text-2xl">
+                        {onLanguage === 'ru' && 'Написать мне:'}
+                        {onLanguage === 'en' && 'Text me:'}
                     </h2>
-                    <ul  className="contacts__text-me-list">
-                        <li className="contacts__text-me-list-item">
-                            <div className="contact__icon contact__icon_email"></div>
-                            <a href="KudinaMD@Yandex.ru" className="contacts__text-me-link">KudinaMD@Yandex.ru</a>
+                    <ul  className="flex flex-col gap-1">
+                        <li className="flex gap-3 text-lg sm:text-2xl">
+                            <div className="w-7 h-7 bg-no-repeat bg-center bg-contain bg-icon-email"></div>
+                            <a href="/" className="text-blue-600 visited:text-purple-600">KudinaMD@Yandex.ru</a>
                         </li>
-                        <li className="contacts__text-me-list-item">
-                            <div className="contact__icon contact__icon_telegram"></div>
-                            <a href="https://t.me/KudinaMD"  className="contacts__text-me-link" target="__blank">@KudinaMD</a>
+                        <li className="flex gap-3 text-lg sm:text-2xl">
+                            <div className="w-7 h-7 bg-no-repeat bg-center bg-contain bg-icon-telegram"></div>
+                            <a href="https://t.me/KudinaMD"  className="text-blue-600 visited:text-purple-600" target="__blank">@KudinaMD</a>
                         </li>
-                        <li className="contacts__text-me-list-item">
-                            <div className="contact__icon contact__icon_phone"></div>
+                        <li className="flex gap-3 text-lg sm:text-2xl text-blue-600">
+                            <div className="w-7 h-7 bg-no-repeat bg-center bg-contain bg-icon-phone"></div>
                             +7(903)291-39-43
                         </li>
                     </ul>
                 </div>
-                <div className="contacts__media-container">
-                    <h2 className="contacts__media-title">
+                <div className="max-w-[70px] sm:max-w-[300px] lg:ml-24 flex flex-col">
+                    <h2 className="mb-4 font-medium text-xl sm:text-2xl">
                         {onLanguage === 'ru' && 'Медиа:'}
                         {onLanguage === 'en' && 'Media:'}
                     </h2>
-                    <ul className="contacts__media-list">
-                        <li className="contacts__media-list-item">
+                    <ul className="w-[164px] flex flex-row flex-wrap justify-start gap-2">
+                        <li>
                             <a href="https://github.com/MKudina" target="__blank">
-                                <div className="contacts__media-list-item contacts__link_git"></div>
+                                <div className="w-[48px] h-[48px] bg-no-repeat bg-center bg-[length:38px_38px] hover:bg-[length:48px_48px] duration-500 bg-icon-git"></div>
                             </a>
                         </li>
-                        <li className="contacts__media-list-item">
+                        <li>
                             <a href="https://vk.com/38crew" target="__blank">
-                                <div className="contacts__media-list-item contacts__link_vk"></div>
+                                <div className="w-[48px] h-[48px] bg-no-repeat bg-center bg-[length:38px_38px] hover:bg-[length:48px_48px] duration-500 bg-icon-vk"></div>
                             </a>
                         </li>
                     </ul>

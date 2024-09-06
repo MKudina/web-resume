@@ -5,7 +5,7 @@ function Header ({openSettings, onLanguage}){
     return(
         <header className="max-w-full py-8 flex flex-row justify-evenly items-center
         text-gray-100 bg-black">
-                <div className="flex flex-row items-center gap-1 md:gap-[25px] text-3xl font-medium not-italic">
+                <div className="flex flex-row items-center gap-1 md:gap-[25px] text-3xl font-medium">
                     <div className="w-[50px] h-[50px] md:w-[65px] md:h-[65px] lg:w-[85px] lg:h-[85px] 
                     bg-avatar bg-center bg-no-repeat bg-cover rounded-full box-border
                     border-2 border-solid border-white"></div>
@@ -15,28 +15,29 @@ function Header ({openSettings, onLanguage}){
                             {onLanguage === 'en' && 'Kudina Maksim'}
                         </p>
                 </div>
-                <nav className="header__navigation">
-                    <ul className="header__list">
-                        <li className="header__list-item">
-                            <Link to="/" className="header__link">
+                <nav className="w-10 lg:w-2/5">
+                    <ul className="w-full flex flex-row justify-end lg:justify-between 
+                    xl:text-2xl md:text-xl font-medium list-none">
+                        <li className="hidden lg:block">
+                            <Link to="/" className="btn-link">
                                 {onLanguage === 'ru' && 'Обо мне'}
                                 {onLanguage === 'en' && 'About me'}
                             </Link>
                         </li>
-                        <li className="header__list-item">
-                            <Link to="/project" className="header__link">
+                        <li className="hidden lg:block">
+                            <Link to="/project" className="btn-link">
                                 {onLanguage === 'ru' && 'Проекты'}
                                 {onLanguage === 'en' && 'Projects'}
                             </Link>
                         </li>
-                        <li className="header__list-item">
-                            <Link to="/skills" className="header__link">
+                        <li className="hidden lg:block">
+                            <Link to="/skills" className="btn-link">
                                 {onLanguage === 'ru' && 'Скиллы'}
                                 {onLanguage === 'en' && 'Skills'}
                             </Link>
                         </li>
-                        <li className="header__list-item">
-                            <Link to="/contacts" className="header__link">
+                        <li className="hidden lg:block">
+                            <Link to="/contacts" className="btn-link">
                                 {onLanguage === 'ru' && 'Контакты'}
                                 {onLanguage === 'en' && 'Contacts'}
                             </Link>

@@ -3,46 +3,40 @@
 @tailwind utilities;
 
 @layer components {
-    .btn-link {
-      @apply p-[5px] text-gray-100 bg-black rounded-2xl duration-[1000ms] hover:invert;
-    }
-    .theme-light {
-        @apply 
-    }
+  .btn-link {
+    @apply p-[5px] text-gray-100 bg-black rounded-2xl duration-[1000ms] hover:invert;
   }
+}
 
-/* подключение сброса Normalize */
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./vendor/fonts/Inter-Regular.woff2") format("woff2"),
+         url("./vendor/fonts/Inter-Regular.woff") format("woff");
+  }
+}
 
-@import url(./vendor/normalize.css);
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./vendor/fonts/Inter-Medium.woff2") format("woff2"),
+         url("./vendor/fonts/Inter-Medium.woff") format("woff");
+  }
+}
 
-/* подключение шрифта Inter */
-
-@import url(./vendor/fonts/fonts.css);
-
-/* подключение тем */
-
-@import url(./vendor/themes.css);
-
-/* подключение блока Card */
-
-@import url(./components/Card/Card.css);
-
-/* подключение блока Projects */
-
-@import url(./pages/Projects/Projects.css);
-
-/* подключение блока About */
-
-@import url(./pages/About/About.css);
-
-/* подключение блока Skills */
-
-@import url(./pages/Skills/Skills.css);
-
-/* подключение блока Contacts */
-
-@import url(./pages/Contacts/Contacts.css);
-
-/* подключение блока Settings */
-
-@import url(./components/Settings/Settings.css);
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("./vendor/fonts/Inter-Black.woff2") format("woff2"),
+         url("./vendor/fonts/Inter-Black.woff") format("woff");
+  }
+}
