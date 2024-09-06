@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 function Main ({onLanguage, projects}){
 
     return (
-        <main className="content">
+        <main className="lg:mx-20">
             <Routes>
                 <Route path="/project" element={<Projects onLanguage={onLanguage} projects={projects} />} />
                 <Route path="/" element={<About onLanguage={onLanguage} />} />
