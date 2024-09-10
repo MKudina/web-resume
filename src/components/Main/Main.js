@@ -3,7 +3,7 @@ import About from "../../pages/About/About";
 import Skills from "../../pages/Skills/Skills";
 import Contacts from "../../pages/Contacts/Contacts";
 import { Route, Routes } from "react-router-dom";
-import { Notfound } from "../../pages/404/404";
+import { Notfound } from "../../pages/404/404.jsx";
 
 function Main ({onLanguage, projects}){
 
