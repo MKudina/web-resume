@@ -10,7 +10,7 @@ function Main ({onLanguage, projects}){
     return (
         <main className="lg:mx-20">
             <Routes>
-                <Route path="/project" element={<Projects onLanguage={onLanguage} projects={projects} />} />
+                <Route path="/projects" element={<Projects onLanguage={onLanguage} projects={projects} />} />
                 <Route path="/" element={<About onLanguage={onLanguage} />} />
                 <Route path="/skills" element={<Skills onLanguage={onLanguage} />} />
                 <Route path="/contacts" element={<Contacts onLanguage={onLanguage} />} />

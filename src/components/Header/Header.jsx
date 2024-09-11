@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Tabs } from "../Tabs/Tabs.jsx";
 
 function Header ({openSettings, onLanguage}){
 
@@ -16,39 +17,11 @@ function Header ({openSettings, onLanguage}){
                         </p>
                 </div>
                 <nav className="w-10 lg:w-2/5">
-                    <ul className="w-full flex flex-row justify-end lg:justify-between 
-                    xl:text-2xl md:text-xl font-medium list-none">
-                        <li className="hidden lg:block">
-                            <Link to="/" className="btn-link">
-                                {onLanguage === 'ru' && 'Обо мне'}
-                                {onLanguage === 'en' && 'About me'}
-                            </Link>
-                        </li>
-                        <li className="hidden lg:block">
-                            <Link to="/project" className="btn-link">
-                                {onLanguage === 'ru' && 'Проекты'}
-                                {onLanguage === 'en' && 'Projects'}
-                            </Link>
-                        </li>
-                        <li className="hidden lg:block">
-                            <Link to="/skills" className="btn-link">
-                                {onLanguage === 'ru' && 'Скиллы'}
-                                {onLanguage === 'en' && 'Skills'}
-                            </Link>
-                        </li>
-                        <li className="hidden lg:block">
-                            <Link to="/contacts" className="btn-link">
-                                {onLanguage === 'ru' && 'Контакты'}
-                                {onLanguage === 'en' && 'Contacts'}
-                            </Link>
-                        </li>
-                        <li className="">
-                            <button type="button" className="w-9 h-9 lg:w-11 lg:h-11 
-                            bg-black hover:bg-white bg-icon-menu-light hover:bg-icon-menu-dark 
-                            bg-center bg-no-repeat bg-[length:30px_30px] rounded-full border-none 
-                            cursor-pointer duration-[1000ms] lg:hidden" onClick={openSettings} />
-                        </li>
-                    </ul>
+                    <Tabs />
+                    <button type="button" className="w-9 h-9 lg:w-11 lg:h-11 
+                    bg-white bg-icon-menu-dark 
+                    bg-center bg-no-repeat bg-[length:25px_25px] rounded-full border-none 
+                    cursor-pointer duration-[1000ms] lg:hidden" onClick={openSettings} />
                 </nav>
                 
                 <button type="button" className="w-9 h-9 lg:w-11 lg:h-11 bg-white bg-icon-settings 
