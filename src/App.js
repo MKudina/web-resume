@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import Settings from './components/Settings/Settings';
+import Footer from './components/Footer/Footer.jsx';
+import Header from './components/Header/Header.jsx';
+import Main from './components/Main/Main.jsx';
+import Settings from './components/Settings/Settings.jsx';
 import { api } from './utils/Api';
 import useTheme from './hooks/use-theme';
 

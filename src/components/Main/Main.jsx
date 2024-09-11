@@ -1,8 +1,8 @@
-import Projects from "../../pages/Projects/Projects";
-import About from "../../pages/About/About";
-import Skills from "../../pages/Skills/Skills";
-import Contacts from "../../pages/Contacts/Contacts";
 import { Route, Routes } from "react-router-dom";
+import Projects from "../../pages/Projects/Projects.jsx";
+import About from "../../pages/About/About.jsx";
+import Skills from "../../pages/Skills/Skills.jsx";
+import Contacts from "../../pages/Contacts/Contacts.jsx";
 import { Notfound } from "../../pages/404/404.jsx";
 
 function Main ({onLanguage, projects}){
