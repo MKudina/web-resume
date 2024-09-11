@@ -5,11 +5,11 @@ import Main from './components/Main/Main.jsx';
 import Settings from './components/Settings/Settings.jsx';
 import { api } from './utils/Api';
 import useTheme from './hooks/use-theme';
+import './utils/I18n.js'
 
 function App() {
 
   const [isOpenSettings, setOpenSettings] = useState(false);
-  const [isLanguage, setIsLanguage] = useState('ru');
   const [projects, setProjects] = useState([]);
   const {theme, setTheme} = useTheme();
 
@@ -35,11 +35,10 @@ function App() {
 
   return (
     <div className="max-w-full h-full mx-auto flex flex-col font-inter text-black bg-white relative">
-      <Header openSettings={openSettings} onLanguage={isLanguage} />
-      <Main onLanguage={isLanguage} projects={projects} />
-      <Footer onLanguage={isLanguage} />
-      <Settings isOpenSettings={isOpenSettings} handleLanguage={setIsLanguage} onLanguage={isLanguage} 
-      handleTheme={setTheme} onTheme={theme} />
+      <Header openSettings={openSettings} />
+      <Main projects={projects} />
+      <Footer />
+      <Settings isOpenSettings={isOpenSettings} handleTheme={setTheme} onTheme={theme} />
     </div>
   );
 }

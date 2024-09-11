@@ -1,21 +1,21 @@
 export const TABS = [
     {
-        title: 'Обо мне',
+        title: 'AboutMe',
         path:'/', 
         id: '1',
     },
     {
-        title: 'Проекты', 
+        title: 'Projects', 
         path:'/projects', 
         id: '2',
     },
     {
-        title: 'Скиллы',
+        title: 'Skills',
         path:'/skills',
         id: '3',
     },
     {
-        title: 'Контакты',
+        title: 'Contacts',
         path:'/contacts', 
         id: '4',
     },

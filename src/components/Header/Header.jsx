@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Tabs } from "../Tabs/Tabs.jsx";
 
-function Header ({openSettings, onLanguage}){
+function Header ({openSettings}){
+
+    const { t } = useTranslation();
 
     return(
         <header className="max-w-full py-8 flex flex-row justify-evenly items-center
@@ -12,8 +14,7 @@ function Header ({openSettings, onLanguage}){
                     border-2 border-solid border-white"></div>
                         <p className="text-lg sm:text-2xl md:text-3xl xl:text-4xl">
                             Frontend developer<br/>
-                            {onLanguage === 'ru' && 'Кудина Максим'}
-                            {onLanguage === 'en' && 'Kudina Maksim'}
+                            {t('KudinaMaksim')}
                         </p>
                 </div>
                 <nav className="w-10 lg:w-2/5">

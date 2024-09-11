@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-function Settings({isOpenSettings, handleLanguage, onLanguage, handleTheme, onTheme}){
+function Settings({isOpenSettings, handleTheme, onTheme}){
 
     const [isModeDecoration, setIsModeDecoration] = useState('light');
+    const { t, i18n } = useTranslation();
 
     function handeleTheme(){
         if (onTheme === 'light') {
@@ -20,10 +22,10 @@ function Settings({isOpenSettings, handleLanguage, onLanguage, handleTheme, onTh
       }
 
     function changeLanguageEn(){
-        handleLanguage('en')
+        i18n.changeLanguage('en')
     }
     function changeLanguageRu(){
-        handleLanguage('ru')
+        i18n.changeLanguage('ru')
     }
 
     return (
@@ -33,8 +35,7 @@ function Settings({isOpenSettings, handleLanguage, onLanguage, handleTheme, onTh
             <ul className="w-[80%] flex flex-col justify-center gap-[15px]">
                 <li>
                     <h2 className="w-[100%] font-medium text-3xl">
-                        {onLanguage === 'ru' && 'Язык:'}
-                        {onLanguage === 'en' && 'Language:'}
+                        {t('Language')}:
                     </h2>
                     <button  className="w-11 h-11 font-medium text-3xl cursor-pointer 
                     bg-black bg-center bg-no-repeat rounded-full duration-1000 hover:invert" 
@@ -45,8 +46,7 @@ function Settings({isOpenSettings, handleLanguage, onLanguage, handleTheme, onTh
                 </li>
                 <li>
                     <h2 className="w-[100%] font-medium text-3xl">
-                        {onLanguage === 'ru' && 'Тема:'}
-                        {onLanguage === 'en' && 'Mode:'}
+                        {t('Mode')}:
                     </h2>
                     <button className={`w-11 h-11 cursor-pointer bg-black bg-center bg-no-repeat 
                     rounded-full bg-[length:30px_30px] duration-1000 hover:invert hover:rotate-[360deg] 

@@ -1,9 +1,13 @@
-function Skills({onLanguage}){
+import { useTranslation } from "react-i18next";
+
+function Skills(){
+
+    const { t } = useTranslation();
+
     return (
         <section id="skills" className="max-w-[100%]">
             <h2 className="py-[60px] font-medium text-3xl">
-                {onLanguage === 'ru' && 'Скиллы'}
-                {onLanguage === 'en' && 'Skills'}
+                {t('Skills')}
             </h2>
             <ul className="flex flex-wrap gap-8">
                 <li className="w-24 h-24 bg-no-repeat bg-center bg-contain bg-icon-skill-html"></li>

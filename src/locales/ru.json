@@ -1,0 +1,10 @@
+{
+    "en": {
+      "welcome": "Welcome",
+      "goodbye": "Goodbye"
+    },
+    "ru": {
+      "welcome": "Привет",
+      "goodbye": "Пока"
+    }
+  }
